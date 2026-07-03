@@ -1,0 +1,114 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root{
+
+    --primary:#111111;
+
+    --secondary:#666666;
+
+    --background:#FAFAF8;
+
+    --card:#FFFFFF;
+
+    --accent:#B88A44;
+
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+    --max-width:1280px;
+    
+
+}
+
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--primary);
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+button{
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+
+/* ===========================
+   COMMON CONTAINER
+=========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:var(--max-width);
+
+    margin:auto;
+
+}
+
+
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+
+    padding:100px 0;
+
+}

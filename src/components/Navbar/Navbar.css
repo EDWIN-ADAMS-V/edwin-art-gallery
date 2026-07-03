@@ -1,0 +1,332 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    transition:.35s ease;
+
+}
+
+.navbar.scrolled{
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    border-bottom:1px solid rgba(0,0,0,.05);
+
+}
+
+.navbar-container{
+
+    height:72px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+
+    font-size:1.9rem;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+.logo span{
+
+    color:var(--accent);
+
+}
+
+/* ===========================
+   DESKTOP NAV
+=========================== */
+
+.desktop-nav{
+
+    display:flex;
+    cursor:pointer;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:38px;
+
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    position:relative;
+
+}
+
+.nav-links span{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:.96rem;
+
+    font-weight:500;
+
+}
+
+.nav-links span:hover{
+
+    color:var(--accent);
+
+}
+
+.nav-links li::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--accent);
+
+    transform:translateX(-50%);
+
+    transition:.3s;
+
+}
+
+.nav-links li:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   MOBILE BUTTON
+=========================== */
+
+.explore-toggle{
+
+background:transparent;
+
+border:none;
+
+padding:0;
+
+font-size:.95rem;
+
+font-weight:500;
+
+color:#222;
+
+cursor:pointer;
+
+display:flex;
+
+align-items:center;
+
+gap:6px;
+
+transition:.3s;
+
+}
+
+.arrow{
+
+    transition:.3s;
+
+}
+
+.arrow.rotate{
+
+    transform:rotate(180deg);
+
+}
+
+/* ===========================
+   MOBILE NAV
+=========================== */
+
+.mobile-nav{
+
+    display:none;
+    
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.navbar{
+
+    top:10px;
+
+    left:12px;
+
+    right:12px;
+
+    width:auto;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.navbar.scrolled{
+
+    border-radius:18px;
+
+}
+
+.navbar-container{
+
+    padding:0 18px;
+
+}
+
+.desktop-nav{
+
+    display:none !important;
+
+}
+
+.explore-toggle{
+
+    display:flex !important;
+
+}
+
+/* expanding card */
+
+.mobile-nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    transition:
+
+        max-height .35s ease,
+
+        opacity .25s ease,
+
+        padding .35s ease;
+
+    padding:0 18px;
+
+    align-items:center;
+
+}
+
+.mobile-nav.show{
+
+    max-height:260px;
+
+    opacity:1;
+
+    padding:8px 18px 18px;
+
+}
+
+.mobile-nav span{
+
+    padding:14px 0;
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+    cursor:pointer;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.mobile-nav span:last-child{
+
+    border-bottom:none;
+
+}
+
+.mobile-nav span:hover{
+
+    color:var(--accent);
+
+}
+
+}
+
+/* ===========================
+   DESKTOP ONLY
+=========================== */
+
+@media (min-width:769px){
+
+.explore-toggle{
+
+    display:none !important;
+
+}
+
+.mobile-nav{
+
+    display:none !important;
+
+}
+
+.desktop-nav{
+
+    display:flex !important;
+
+}
+
+}

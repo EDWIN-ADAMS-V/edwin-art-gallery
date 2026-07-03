@@ -1,0 +1,3 @@
+<Reveal>
+    <Gallery />
+</Reveal>

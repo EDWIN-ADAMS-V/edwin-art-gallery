@@ -1,0 +1,71 @@
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#0c0c0c;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    z-index:99999;
+
+}
+
+.loader-glow{
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:#B08D57;
+
+    filter:blur(90px);
+
+    opacity:.35;
+
+}
+
+.loader-logo{
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:6rem;
+
+    font-weight:800;
+
+    color:#fff;
+
+    letter-spacing:2px;
+
+    transform-origin:center;
+
+    will-change:transform,opacity,filter;
+
+    backface-visibility:hidden;
+
+    text-rendering:geometricPrecision;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+.loader-logo span{
+
+    color:#B08D57;
+
+}
