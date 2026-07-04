@@ -10,6 +10,7 @@ import Commission from "./components/Commission/Commission";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
+import Feedback from "./components/Feedback/Feedback";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,6 +42,7 @@ function App() {
             <About />
             <Commission />
             <Contact />
+            <Feedback />
             <Footer />
           </motion.div>
         )}
