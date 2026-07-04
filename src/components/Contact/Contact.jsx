@@ -40,7 +40,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://instagram.com/eddicreates.in"
+            href="https://instagram.com/edwin_adams_v"
             target="_blank"
             rel="noreferrer"
             className="contact-card"
